@@ -6,6 +6,10 @@ import math
 import numpy
 
 
+# Code is based on example found here:
+# http://stackoverflow.com/a/16268034
+
+
 def main():
     
     size = (480, 360)
