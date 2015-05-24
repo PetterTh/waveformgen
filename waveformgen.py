@@ -77,8 +77,8 @@ class sound():
             t = float(s)/sample_rate    # time in seconds
     
             #grab the x-coordinate of the sine wave at a given time, while constraining the sample to what our mixer is set to with "bits"
-            buf[s][0] = int(round(max_sample*(math.sin(2*math.pi*frequency*t)+0.5*math.sin(2*2*math.pi*frequency*t)+0.125*math.sin(2*math.pi*frequency*t)))        # left
-            buf[s][1] = buf[s][1]
+            buf[s][0] = int(round(max_sample*(math.sin(2*math.pi*frequency*t)+0.5*math.sin(2*2*math.pi*frequency*t)+0.125*math.sin(2*math.pi*frequency*t))))        # left
+            buf[s][1] = buf[s][0]
         self.buf = buf
 
     def play(self):
